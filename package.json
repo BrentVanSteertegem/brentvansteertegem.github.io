@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "My own personal portfolio website.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brent-Van-Steertegem/Brent-Van-Steertegem.github.io.git"
+  },
+  "author": "Brent Van Steertegem - <brent.vansteertegem@gmail.com> - www.brentvs.be",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Brent-Van-Steertegem/Brent-Van-Steertegem.github.io/issues"
+  },
+  "homepage": "https://github.com/Brent-Van-Steertegem/Brent-Van-Steertegem.github.io#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  }
+}
