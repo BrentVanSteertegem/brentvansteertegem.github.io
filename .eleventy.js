@@ -1,3 +1,5 @@
+const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
+
 module.exports = function (eleventyConfig) {  
   eleventyConfig.addPassthroughCopy({
     'src/assets/styles': 'assets/styles'
@@ -8,6 +10,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     'src/assets/images': 'assets/images'
   });
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   return {
     ...eleventyConfig,
@@ -15,6 +18,5 @@ module.exports = function (eleventyConfig) {
       input: 'src',
       output: 'build'
     },
-   pathPrefix: 'Portfolio-Website'
   }
 }
