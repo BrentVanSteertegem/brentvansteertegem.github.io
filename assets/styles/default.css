@@ -18,6 +18,40 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
+/* Navbar */
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  width: inherit;
+}
+
+.nav__links {
+  padding: 0 0.5rem;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 3rem;
+}
+
+.nav__link {
+  padding: 1rem 0.5rem;
+  border: 0;
+}
+
+.nav__link:hover {
+  transition: 0.2s ease-in;
+  color: var(--color-accent-light);
+}
+
+.nav__link--active {
+  color: var(--color-accent-light);
+  text-decoration: underline;
+  text-decoration-thickness: 0.15rem;
+  text-underline-offset: 0.5rem;
+}
+
+/* Container */
 .container {
   width: calc(100vw - 2rem);
   max-width: 60rem;
