@@ -1,0 +1,26 @@
+/* Import assets */
+@import 'reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rubik:wght@400;700&display=swap');
+
+/* Predefine variables */
+:root {
+  --color-bg: #111;
+  --color-text: #fff;
+  --color-accent-light: #2e2;
+  --color-accent: #171;
+  --color-accent-dark: #121;
+}
+
+/* Actual styling */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Rubik', sans-serif;
+}
+
+.container {
+  width: calc(100vw - 2rem);
+  max-width: 60rem;
+  padding: 1rem;
+  margin: 0 auto;
+}
