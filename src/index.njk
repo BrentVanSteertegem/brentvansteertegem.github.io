@@ -8,6 +8,10 @@ eleventyNavigation:
 
 {% block contentDefault %}
     <div class="container">
-        <h1>Greetings earthling!</h1>
+        {% include "components/content_index.njk" %}
+        {% include "components/content_services.njk" %}
+        {% include "components/content_projects.njk" %}
+        {% include "components/content_technologies.njk" %}
+        {% include "components/content_contact.njk" %}   
     </div>
 {% endblock %}

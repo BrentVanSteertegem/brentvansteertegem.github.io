@@ -11,11 +11,17 @@
   --color-accent-dark: #121;
 }
 
+/* Set scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Actual styling */
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: 'Rubik', sans-serif;
+  overflow: hidden;
 }
 
 /* Navbar */
@@ -23,11 +29,13 @@ body {
   display: flex;
   justify-content: flex-end;
   width: inherit;
+  position: fixed;
+  background-color: var(--color-bg);
 }
 
 .nav__links {
   padding: 0;
-  margin: 0 -0.5rem 0 0;
+  margin: 0;
   list-style: none;
   display: flex;
   align-items: center;
@@ -56,5 +64,18 @@ body {
   width: calc(100vw - 2rem);
   max-width: 60rem;
   padding: 1rem;
+  margin: 0 auto;
+}
+
+.container--nav {
+  width: calc(100vw - 1.5rem);
+  max-width: 60.5rem;
+  padding: 0 0.5rem 0 1rem;
+}
+
+.content {
+  padding-top: 3rem;
+  height: calc(100vh - 3rem);
+  width: fit-content;
   margin: 0 auto;
 }

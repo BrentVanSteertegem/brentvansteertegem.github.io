@@ -1,11 +1,9 @@
-<nav class="nav container">
+<nav class="nav container container--nav">
     {% set navPages = collections.all | eleventyNavigation %}
     <ul class="nav__links">
         {%- for entry in navPages %}
             <li>
-                <a class="nav__link" id="nav_{{entry.title}}" href="./#{{entry.key}}">
-                    {{entry.title}}
-                </a>
+                <a class="nav__link" id="nav_{{entry.title}}" href="./#{{entry.key}}">{{entry.title}}</a>
             </li>
         {%- endfor %}
     </ul>
