@@ -5,6 +5,11 @@
 {% endblock %}
 
 {% block contentBody %}
-    {% block contentDefault %}
-    {% endblock %}
+    <header>
+        {%include 'components/navbar.njk' %}
+    </header>
+    <main>
+        {% block contentDefault %}
+        {% endblock %}
+    </main>
 {% endblock %}
