@@ -27,7 +27,7 @@ body {
 /* Navbar */
 .nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   width: inherit;
   position: fixed;
   background-color: var(--color-bg);
@@ -44,7 +44,7 @@ body {
 
 .nav__link {
   text-decoration: none;
-  padding: 1rem 0.5rem;
+  padding: 0.5rem;
 }
 
 .nav__link:hover {
@@ -59,23 +59,32 @@ body {
   text-underline-offset: 0.5rem;
 }
 
+.nav__link--logo:hover .logo {
+  transition: 0.4s ease-in-out;
+  filter: invert(51%) sepia(83%) saturate(7089%) hue-rotate(81deg) brightness(200%) contrast(100%);
+}
+
+.logo {
+  height: 2rem;
+}
+
 /* Container */
 .container {
   width: calc(100vw - 2rem);
   max-width: 60rem;
-  padding: 1rem;
+  padding: 0 1rem;
   margin: 0 auto;
 }
 
 .container--nav {
-  width: calc(100vw - 1.5rem);
-  max-width: 60.5rem;
-  padding: 0 0.5rem 0 1rem;
+  width: calc(100vw - 1rem);
+  max-width: 61rem;
+  padding: 0 0.5rem;
 }
 
 .content {
-  padding-top: 3rem;
-  height: calc(100vh - 3rem);
+  padding: 3rem 0 1rem 0;
+  height: calc(100vh - 4rem);
   width: fit-content;
   margin: 0 auto;
 }
