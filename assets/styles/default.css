@@ -120,6 +120,48 @@ body {
   height: 2rem;
 }
 
+/* Card component */
+.card {
+  width: calc(50% - 0.5rem);
+  max-width: 10rem;
+  max-height: 12rem;
+  perspective: 60rem;
+  font-family: "Poppins";
+}
+
+.card__flip {
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card__flip {
+  transform: rotateY(180deg);
+}
+
+.card__front, .card__back {
+  height: 12rem;
+  max-height: 10rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  backface-visibility: hidden;
+  text-align: center;
+}
+
+.card__front {
+  background: radial-gradient(#112211 25%, #111111 150%);
+}
+
+.card__back {
+  background: radial-gradient(#114411 25%, #111111 150%);
+  filter: drop-shadow(0 0 0.1rem #22ee22);
+  transform: rotateY(180deg);
+  margin-top: -12rem;
+  justify-content: center;
+  flex-direction: column;
+}
+
 /* Container */
 .container {
   width: calc(100vw - 2rem);
@@ -178,3 +220,44 @@ body {
     margin-bottom: 2.5rem;
   }
 }
+
+/* Content services */
+.content__inner--services {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.services {
+  padding: 0;
+  margin: 0;
+  width: fit-content;
+}
+
+.service {
+  max-width: calc(100vw - 2rem);
+  width: 100%;
+  gap: 1rem;
+  transition: 0.4s ease-in-out;
+}
+
+.service:hover {
+  background: radial-gradient(#114411 25%, #111111 150%);
+  filter: drop-shadow(0 0 0.1rem #22ee22);
+}
+
+.service.card__front {
+  max-height: calc(calc(100vh - 8rem) / 4);
+}
+
+.service__image {
+  max-width: calc(50% - 0.5rem);
+  height: 100%;
+  object-fit: contain;
+  border-radius: 1rem;
+  margin: 0 auto;
+}
+
+.service__name {
+  width:  calc(50% - 0.5rem);;
+}
+
