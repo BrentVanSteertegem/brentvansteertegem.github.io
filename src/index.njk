@@ -8,14 +8,14 @@ eleventyNavigation:
       alt: logo
       class: logo
 ---
-{% extends 'default.njk' %}
+{% extends "default.njk" %}
 
-{% block contentDefault %}
-    <div class="container">
+{% block defaultContent %}
+    <main class="container">
         {% include "components/content_index.njk" %}
-        {% include "components/content_services.njk" %}
+         {% include "components/content_services.njk" %}
         {% include "components/content_projects.njk" %}
         {% include "components/content_technologies.njk" %}
-        {% include "components/content_contact.njk" %}   
-    </div>
+        {% include "components/content_contact.njk" %}     
+    </main>
 {% endblock %}

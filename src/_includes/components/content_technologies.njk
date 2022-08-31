@@ -1,3 +1,26 @@
 <div id="Technologies" class="content">
-    <h1>Technologies</h1>
+    <ul class="content__inner content__inner--technologies">
+        {% for technology in collections.technologies %}
+            <li class="technology card">
+                <div class="card__flip">
+                    <div class="card__front">
+                        <img class="technology__logo" src="/assets/images/{{technology.data.image}}" alt="{{technology.data.name}} logo">
+                    </div>
+                    <div class="card__back">
+                        <span>{{technology.data.name}}</span>
+                    </div>
+                </div>
+            </li>
+        {% endfor %}
+        <li class="technology card card--last">
+            <div class="card__flip"> 
+                <div class="card__front">
+                    <a href="./technologies" class="card__link">View all</a>
+                </div>
+                <div class="card__back">
+                    <a href="./technologies" class="card__link">View all</a>
+                </div>
+            </div>
+        </li>
+    </ul>
 </div>

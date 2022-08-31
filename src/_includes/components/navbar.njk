@@ -1,9 +1,9 @@
-<nav class="nav container container--nav">
+<nav class="nav">
     {% set navPages = collections.all | eleventyNavigation %}
     {%- for entry in navPages %}
         {% if entry.img %}
-            <a class="nav__link nav__link--logo" id="nav_{{entry.title}}" href="./#{{entry.key}}">
-                <img src="./assets/images/{{entry.img[0].src}}" class="{{entry.img[0].class}}" alt="{{entry.img[0].alt}}">
+            <a class="nav__link nav__link--logo" id="nav_{{entry.title}}" href="/#{{entry.key}}">
+                <img src="/assets/images/{{entry.img[0].src}}" class="{{entry.img[0].class}}" alt="{{entry.img[0].alt}}">
             </a>
         {% endif %}
     {%- endfor %}
@@ -11,7 +11,9 @@
         {%- for entry in navPages %}
             {% if not entry.img %}
                 <li>
-                    <a class="nav__link" id="nav_{{entry.title}}" href="./#{{entry.key}}">{{entry.title}}</a>
+                    <a class="nav__link" id="nav_{{entry.title}}" href="/#{{entry.key}}">
+                        {{entry.title}}
+                    </a>
                 </li>
             {% endif %}
         {%- endfor %}

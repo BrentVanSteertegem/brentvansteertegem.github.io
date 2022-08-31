@@ -1,16 +1,14 @@
-{% extends 'base.njk' %}
+{% extends "base.njk" %}
 
-{% block contentHead %}
-    <link rel="stylesheet" type="text/css" href="/assets/styles/default.css">
+{% block content %}
+    <link rel="stylesheet" href="/assets/styles/main.css">
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.svg">
-{% endblock %}
-
-{% block contentBody %}
-    <header>
-        {%include 'components/navbar.njk' %}
-    </header>
-    <main>
-        {% block contentDefault %}
+    <body>
+        <header>
+            {%include 'components/navbar.njk' %}
+        </header>
+        {% block defaultContent %}
         {% endblock %}
-    </main>
+    </body>
+    <script src="/assets/scripts/app.js" type="module"></script>
 {% endblock %}
