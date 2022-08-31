@@ -1,3 +1,46 @@
 <div id="Contact" class="content">
-    <h1>Contact</h1>
+    <div class="content__inner content__inner--contact">
+        <div class="contact__description">
+            <p class="text--contact">Want to <span class="color--accent">contact me</span>?<br>
+                Fill out your <span class="color--accent">e-mail</span> &amp; your <span class="color--accent">message</span> below!
+            </p>
+        </div>
+        <form class="contact__form" action="mailto: brent.vansteertegem@student.arteveldehs.be">
+            <label class="contact__label" for="email">E-mail:</label>
+            <input class="contact__input" name="email" type="text" />
+            <label class="contact__label" for="message">Message:</label>
+            <textarea class="contact__input contact__textarea" name="message">This feature is not yet available, you can contact me directly on my email: brent.vansteertegem&#64;student.arteveldehs.be</textarea>
+            <button type="submit" class="button">Submit</button>
+        </form>
+        <section class="contact__links">
+            <div class="socials">
+                <h2 class="text--contact">Socials</h2>
+                <ul class="socials__list">
+                    <li class="socials__item">
+                        <a class="socials__link" target="_blank" href="https://www.linkedin.com/in/brentvansteertegem/">
+                            <img class="logo logo--link" src="/assets/images/linkedin.svg" alt="LinkedIn logo">
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" target="_blank" href="https://github.com/Brent-Van-Steertegem">
+                            <img class="logo logo--link" src="/assets/images/technologies/github.svg" alt="Github logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact__methods">
+                <h2 class="text--contact">Contact</h2>
+                <ul class="contact__list">
+                    <li class="contact__item">
+                        <img class="icon" src="/assets/images/telephone_icon.svg" alt="Telephone icon">
+                        <span class="contact__text">0472 72 39 72</span>
+                    </li>
+                    <li class="contact__item">
+                        <img class="icon" src="/assets/images/email_icon.svg" alt="Email icon">
+                        <span class="contact__text">brent.vansteertegem&#64;<br>student.arteveldehs.be</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
 </div>
