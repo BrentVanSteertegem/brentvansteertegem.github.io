@@ -1,3 +1,65 @@
 <div id="Projects" class="content">
-    <h1>Projects</h1>
+    <ul class="content__inner content__inner--projects">
+        {% for project in collections.projects %}
+            <li class="project project--{{project.data.title | slugify}} card">
+                <div class="modal hidden">
+                    <section class="modal__header">
+                        <button class="button--close">X</button>
+                    </section>
+                    <section class="project__content">
+                        <div class="project__summary">
+                            {% if project.data.image %}
+                                <img class="project__image" src="/assets/images/{{project.data.image}}" alt="{{project.data.title}} image">
+                            {% endif %}
+                            <p class="project__description">{{project.data.description}}</p>
+                        </div>
+                        <section class="project__links">
+                            {% if project.data.demo_url %}
+                                <a class="card__link" target="_blank" href="{{project.data.demo_url}}">
+                                <img src="/assets/images/technologies/github.svg" class="logo logo--link" alt="github logo">
+                                    Click here for a live demo!
+                                </a>
+                            {% endif %}
+                            <a class="card__link" target="_blank" href="{{project.data.code_url}}">
+                                <img src="/assets/images/technologies/github.svg" class="logo logo--link" alt="github logo">
+                                View code here!
+                            </a>
+                        </section>
+                    </section>
+                </div>
+                <div class="card__flip">
+                    {% if project.data.image %}
+                        {% if project.data.title === 'Arne Quinze' %}
+                            <div class="card__front card__front--offset_horizontal" style="background-image:url(/assets/images/{{project.data.image}})">
+                        {% elif project.data.title === 'Gentse feesten'%}
+                            <div class="card__front card__front--offset_vertical" style="background-image:url(/assets/images/{{project.data.image}})">
+                        {% else %}
+                            <div class="card__front" style="background-image:url(/assets/images/{{project.data.image}})">
+                        {% endif %}
+                    {% else %}  
+                        <div class="card__front"> 
+                    {% endif %}
+                        <div class="card__banner">
+                            <p class="card__text">{{project.data.title}}</p>
+                        </div>
+                    </div>
+                    <div class="card__back">
+                         <span class="card__link">
+                            View project!
+                        </span>
+                    </div>
+                </div>
+            </li>
+        {% endfor %}
+        <li class="project card card--last">
+            <div class="card__flip"> 
+                <div class="card__front">
+                    <a href="./projects" class="card__link">View all</a>
+                </div>
+                <div class="card__back">
+                    <a href="./projects" class="card__link">View all</a>
+                </div>
+            </div>
+        </li>
+    </ul>
 </div>
