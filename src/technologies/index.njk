@@ -4,3 +4,29 @@ eleventyNavigation:
     key: Technologies
     order: 4
 ---
+
+{% extends "list.njk" %}
+
+{% block listContent %}
+    <ul class="content content__list">
+        {% for type, technology in collections.technologies | groupby('data.type') %}
+            <div class="technology_list">
+                <h2 class="technology_type">{{type}}</h2>
+                <ul class="list">
+                    {% for technology in technology %}
+                        <li class="technology card">
+                            <div class="card__flip">
+                                <div class="card__front">
+                                    <img class="technology__logo" src="/assets/images/{{technology.data.image}}" alt="{{technology.data.name}} logo">
+                                </div>
+                                <div class="card__back">
+                                    <span>{{technology.data.name}}</span>
+                                </div>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endfor %}
+    </ul>
+{% endblock %}

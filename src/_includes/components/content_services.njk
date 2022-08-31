@@ -1,10 +1,12 @@
 <div id="Services" class="content">
     <div class="content__inner content__inner--services">
-        <p class="text--services">These are the <span class="text--accent">services</span> I'm currently offering you.</p>
+        <div class="services__description">
+            <p class="text--services">These are the <span class="color--accent">services</span> I'm currently offering you.</p>
+        </div>
         <ul class="services">
             {% for service in collections.services %}
                 <li class="service card card__front">
-                    <img class="service__image" src="./assets/images/services/{{service.data.image}}" alt="{{service.data.name}} logo">
+                    <img class="service__image" src="/assets/images/{{service.data.image}}" alt="{{service.data.name}} logo">
                     <span class="service__name">{{service.data.name}}</span>
                 </li>
             {% endfor %}
