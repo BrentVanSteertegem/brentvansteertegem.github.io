@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
     <title>Brent Van Steertegem - Portfolio</title>
-    
-    <link rel="stylesheet" type="text/css" href="/assets/styles/default.css">
-    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.svg">
-
 </head>
-<body>
     
-    <header>
-        <nav class="nav container container--nav">
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.svg">
+    <body>
+        <header>
+            <nav class="nav">
     
         
-            <a class="nav__link nav__link--logo" id="nav_Home" href="./#Home">
-                <img src="./assets/images/logo.svg" class="logo" alt="logo">
+            <a class="nav__link nav__link--logo" id="nav_Home" href="/#Home">
+                <img src="/assets/images/logo.svg" class="logo" alt="logo">
             </a>
         
         
@@ -28,60 +26,67 @@
             
             
                 <li>
-                    <a class="nav__link" id="nav_Services" href="./#Services">Services</a>
+                    <a class="nav__link" id="nav_Services" href="/#Services">
+                        Services
+                    </a>
                 </li>
             
             
                 <li>
-                    <a class="nav__link" id="nav_Projects" href="./#Projects">Projects</a>
+                    <a class="nav__link" id="nav_Projects" href="/#Projects">
+                        Projects
+                    </a>
                 </li>
             
             
                 <li>
-                    <a class="nav__link" id="nav_Technologies" href="./#Technologies">Technologies</a>
+                    <a class="nav__link" id="nav_Technologies" href="/#Technologies">
+                        Technologies
+                    </a>
                 </li>
             
             
                 <li>
-                    <a class="nav__link" id="nav_Contact" href="./#Contact">Contact</a>
+                    <a class="nav__link" id="nav_Contact" href="/#Contact">
+                        Contact
+                    </a>
                 </li>
             
     </ul>
 </nav>
-    </header>
-    <main>
+        </header>
         
-    <div class="container">
-        <div id="Home" class="content">
-    <div class="content--index">
-        <section class="content__inner content__inner--index">
-            <img class="selfie" src="./assets/images/its_a_me_not_mario.png" alt="A picture of me." />
-            <H1 class="title">
-                Hi, my name is <span class="text--accent">Brent</span>
-                <br> and I'm a 
-                <span class="typer text--accent">Full-stack developer</span>
-            </h1>
-        </section>
-        <a href="#Contact" class="button button--contact">Contact me</a>
-    </div>
+    <main class="container">
+        <div id="Home" class="content content--index">
+    <section class="content__inner content__inner--index">
+        <img class="selfie" src="/assets/images/its_a_me_not_mario.png" alt="A picture of me." />
+        <H1 class="title">
+            Hi, my name is <span class="color--accent">Brent</span>
+            <br> and I'm a 
+            <span class="typer">Full-stack developer</span>
+        </h1>
+    </section>
+    <a href="#Contact" class="button button--contact">Contact me</a>
 </div>
-        <div id="Services" class="content">
+         <div id="Services" class="content">
     <div class="content__inner content__inner--services">
-        <p class="text--services">These are the <span class="text--accent">services</span> I'm currently offering you.</p>
+        <div class="services__description">
+            <p class="text--services">These are the <span class="color--accent">services</span> I'm currently offering you.</p>
+        </div>
         <ul class="services">
             
                 <li class="service card card__front">
-                    <img class="service__image" src="./assets/images/services/back-end_development.jpg" alt="Back-end development logo">
+                    <img class="service__image" src="/assets/images/back-end_development.jpg" alt="Back-end development logo">
                     <span class="service__name">Back-end development</span>
                 </li>
             
                 <li class="service card card__front">
-                    <img class="service__image" src="./assets/images/services/full-stack_development.jpg" alt="Full-stack development logo">
+                    <img class="service__image" src="/assets/images/full-stack_development.jpg" alt="Full-stack development logo">
                     <span class="service__name">Full-stack development</span>
                 </li>
             
                 <li class="service card card__front">
-                    <img class="service__image" src="./assets/images/services/webdevelopment.jpg" alt="Webdevelopment logo">
+                    <img class="service__image" src="/assets/images/webdevelopment.jpg" alt="Webdevelopment logo">
                     <span class="service__name">Webdevelopment</span>
                 </li>
             
@@ -89,17 +94,559 @@
     </div>
 </div>
         <div id="Projects" class="content">
-    <h1>Projects</h1>
+    <ul class="content__inner content__inner--projects">
+        
+            <li class="project project--a-spotify-application card">
+                <div class="modal hidden">
+                    <section class="modal__header">
+                        <button class="button--close">X</button>
+                    </section>
+                    <section class="project__content">
+                        <div class="project__summary">
+                            
+                                <img class="project__image" src="/assets/images/projects/a_spotify_application.jpg" alt="A Spotify application image">
+                            
+                            <p class="project__description">A Spotify application where the user interface uses custom api-calls to interact with the back-end.</p>
+                        </div>
+                        <section class="project__links">
+                            
+                            <a class="card__link" target="_blank" href="https://github.com/pgmgent-pgm-3/opdracht-2-a-spotify-application-pgm-brentvansteertegem">
+                                <img src="/assets/images/technologies/github.svg" class="logo logo--link" alt="github logo">
+                                View code here!
+                            </a>
+                        </section>
+                    </section>
+                </div>
+                <div class="card__flip">
+                    
+                        
+                            <div class="card__front" style="background-image:url(/assets/images/projects/a_spotify_application.jpg)">
+                        
+                    
+                        <div class="card__banner">
+                            <p class="card__text">A Spotify application</p>
+                        </div>
+                    </div>
+                    <div class="card__back">
+                         <span class="card__link">
+                            View project!
+                        </span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="project project--arne-quinze card">
+                <div class="modal hidden">
+                    <section class="modal__header">
+                        <button class="button--close">X</button>
+                    </section>
+                    <section class="project__content">
+                        <div class="project__summary">
+                            
+                                <img class="project__image" src="/assets/images/projects/arne_quinze.jpg" alt="Arne Quinze image">
+                            
+                            <p class="project__description">A responsive website I had to replicate.</p>
+                        </div>
+                        <section class="project__links">
+                            
+                            <a class="card__link" target="_blank" href="https://github.com/pgmgent-atwork-1/atwork-1-project-1-Brent-Van-Steertegem">
+                                <img src="/assets/images/technologies/github.svg" class="logo logo--link" alt="github logo">
+                                View code here!
+                            </a>
+                        </section>
+                    </section>
+                </div>
+                <div class="card__flip">
+                    
+                        
+                            <div class="card__front card__front--offset_horizontal" style="background-image:url(/assets/images/projects/arne_quinze.jpg)">
+                        
+                    
+                        <div class="card__banner">
+                            <p class="card__text">Arne Quinze</p>
+                        </div>
+                    </div>
+                    <div class="card__back">
+                         <span class="card__link">
+                            View project!
+                        </span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="project project--gentse-feesten card">
+                <div class="modal hidden">
+                    <section class="modal__header">
+                        <button class="button--close">X</button>
+                    </section>
+                    <section class="project__content">
+                        <div class="project__summary">
+                            
+                                <img class="project__image" src="/assets/images/projects/gentse_feesten.jpg" alt="Gentse feesten image">
+                            
+                            <p class="project__description">A responsive website I had to replicate.</p>
+                        </div>
+                        <section class="project__links">
+                            
+                                <a class="card__link" target="_blank" href="https://pgmgent-atwork-1.github.io/atwork-1-project-2-pgm-brentvansteertegem/">
+                                <img src="/assets/images/technologies/github.svg" class="logo logo--link" alt="github logo">
+                                    Click here for a live demo!
+                                </a>
+                            
+                            <a class="card__link" target="_blank" href="https://github.com/pgmgent-atwork-1/atwork-1-project-2-pgm-brentvansteertegem">
+                                <img src="/assets/images/technologies/github.svg" class="logo logo--link" alt="github logo">
+                                View code here!
+                            </a>
+                        </section>
+                    </section>
+                </div>
+                <div class="card__flip">
+                    
+                        
+                            <div class="card__front card__front--offset_vertical" style="background-image:url(/assets/images/projects/gentse_feesten.jpg)">
+                        
+                    
+                        <div class="card__banner">
+                            <p class="card__text">Gentse feesten</p>
+                        </div>
+                    </div>
+                    <div class="card__back">
+                         <span class="card__link">
+                            View project!
+                        </span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="project project--a-github-dashboard card">
+                <div class="modal hidden">
+                    <section class="modal__header">
+                        <button class="button--close">X</button>
+                    </section>
+                    <section class="project__content">
+                        <div class="project__summary">
+                            
+                                <img class="project__image" src="/assets/images/projects/github_dashboard.jpg" alt="A Github dashboard image">
+                            
+                            <p class="project__description">A Github dashboard where the user interface uses custom api-calls to interact with the back-end.</p>
+                        </div>
+                        <section class="project__links">
+                            
+                                <a class="card__link" target="_blank" href="https://pgmpgent-2021-pgm-2.github.io/pgm-2_project_1-pgm-brentvansteertegem/">
+                                <img src="/assets/images/technologies/github.svg" class="logo logo--link" alt="github logo">
+                                    Click here for a live demo!
+                                </a>
+                            
+                            <a class="card__link" target="_blank" href="https://github.com/pgmpgent-2021-pgm-2/pgm-2_project_1-pgm-brentvansteertegem">
+                                <img src="/assets/images/technologies/github.svg" class="logo logo--link" alt="github logo">
+                                View code here!
+                            </a>
+                        </section>
+                    </section>
+                </div>
+                <div class="card__flip">
+                    
+                        
+                            <div class="card__front" style="background-image:url(/assets/images/projects/github_dashboard.jpg)">
+                        
+                    
+                        <div class="card__banner">
+                            <p class="card__text">A Github dashboard</p>
+                        </div>
+                    </div>
+                    <div class="card__back">
+                         <span class="card__link">
+                            View project!
+                        </span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="project project--just-do-it card">
+                <div class="modal hidden">
+                    <section class="modal__header">
+                        <button class="button--close">X</button>
+                    </section>
+                    <section class="project__content">
+                        <div class="project__summary">
+                            
+                                <img class="project__image" src="/assets/images/projects/just_do_it.jpg" alt="Just do it image">
+                            
+                            <p class="project__description">A to do application where the user interface uses custom api-calls to interact with the back-end.</p>
+                        </div>
+                        <section class="project__links">
+                            
+                            <a class="card__link" target="_blank" href="https://github.com/Brent-Van-Steertegem/just-do-it">
+                                <img src="/assets/images/technologies/github.svg" class="logo logo--link" alt="github logo">
+                                View code here!
+                            </a>
+                        </section>
+                    </section>
+                </div>
+                <div class="card__flip">
+                    
+                        
+                            <div class="card__front" style="background-image:url(/assets/images/projects/just_do_it.jpg)">
+                        
+                    
+                        <div class="card__banner">
+                            <p class="card__text">Just do it</p>
+                        </div>
+                    </div>
+                    <div class="card__back">
+                         <span class="card__link">
+                            View project!
+                        </span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="project project--tinder-all-the-way card">
+                <div class="modal hidden">
+                    <section class="modal__header">
+                        <button class="button--close">X</button>
+                    </section>
+                    <section class="project__content">
+                        <div class="project__summary">
+                            
+                                <img class="project__image" src="/assets/images/projects/tinder_all_the_way.jpg" alt="Tinder all the way image">
+                            
+                            <p class="project__description">A Tinder application where the user interface uses custom api-calls to interact with the back-end.</p>
+                        </div>
+                        <section class="project__links">
+                            
+                            <a class="card__link" target="_blank" href="https://github.com/pgmgent-pgm-2/tinder-all-the-way-pgm-brentvansteertegem">
+                                <img src="/assets/images/technologies/github.svg" class="logo logo--link" alt="github logo">
+                                View code here!
+                            </a>
+                        </section>
+                    </section>
+                </div>
+                <div class="card__flip">
+                    
+                        
+                            <div class="card__front" style="background-image:url(/assets/images/projects/tinder_all_the_way.jpg)">
+                        
+                    
+                        <div class="card__banner">
+                            <p class="card__text">Tinder all the way</p>
+                        </div>
+                    </div>
+                    <div class="card__back">
+                         <span class="card__link">
+                            View project!
+                        </span>
+                    </div>
+                </div>
+            </li>
+        
+        <li class="project card card--last">
+            <div class="card__flip"> 
+                <div class="card__front">
+                    <a href="./projects" class="card__link">View all</a>
+                </div>
+                <div class="card__back">
+                    <a href="./projects" class="card__link">View all</a>
+                </div>
+            </div>
+        </li>
+    </ul>
 </div>
         <div id="Technologies" class="content">
-    <h1>Technologies</h1>
+    <ul class="content__inner content__inner--technologies">
+        
+            <li class="technology card">
+                <div class="card__flip">
+                    <div class="card__front">
+                        <img class="technology__logo" src="/assets/images/technologies/js.svg" alt="JavaScript logo">
+                    </div>
+                    <div class="card__back">
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="technology card">
+                <div class="card__flip">
+                    <div class="card__front">
+                        <img class="technology__logo" src="/assets/images/technologies/npm.svg" alt="NPM logo">
+                    </div>
+                    <div class="card__back">
+                        <span>NPM</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="technology card">
+                <div class="card__flip">
+                    <div class="card__front">
+                        <img class="technology__logo" src="/assets/images/technologies/graphcms.svg" alt="GraphCMS logo">
+                    </div>
+                    <div class="card__back">
+                        <span>GraphCMS</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="technology card">
+                <div class="card__flip">
+                    <div class="card__front">
+                        <img class="technology__logo" src="/assets/images/technologies/git.svg" alt="Git logo">
+                    </div>
+                    <div class="card__back">
+                        <span>Git</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="technology card">
+                <div class="card__flip">
+                    <div class="card__front">
+                        <img class="technology__logo" src="/assets/images/technologies/react.svg" alt="React logo">
+                    </div>
+                    <div class="card__back">
+                        <span>React</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="technology card">
+                <div class="card__flip">
+                    <div class="card__front">
+                        <img class="technology__logo" src="/assets/images/technologies/express.svg" alt="Express logo">
+                    </div>
+                    <div class="card__back">
+                        <span>Express</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="technology card">
+                <div class="card__flip">
+                    <div class="card__front">
+                        <img class="technology__logo" src="/assets/images/technologies/jwt.svg" alt="JWT logo">
+                    </div>
+                    <div class="card__back">
+                        <span>JWT</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="technology card">
+                <div class="card__flip">
+                    <div class="card__front">
+                        <img class="technology__logo" src="/assets/images/technologies/express_validator.svg" alt="Express validator logo">
+                    </div>
+                    <div class="card__back">
+                        <span>Express validator</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="technology card">
+                <div class="card__flip">
+                    <div class="card__front">
+                        <img class="technology__logo" src="/assets/images/technologies/html.svg" alt="Html logo">
+                    </div>
+                    <div class="card__back">
+                        <span>Html</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="technology card">
+                <div class="card__flip">
+                    <div class="card__front">
+                        <img class="technology__logo" src="/assets/images/technologies/handlebars.svg" alt="Handlebars logo">
+                    </div>
+                    <div class="card__back">
+                        <span>Handlebars</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="technology card">
+                <div class="card__flip">
+                    <div class="card__front">
+                        <img class="technology__logo" src="/assets/images/technologies/css.svg" alt="CSS logo">
+                    </div>
+                    <div class="card__back">
+                        <span>CSS</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="technology card">
+                <div class="card__flip">
+                    <div class="card__front">
+                        <img class="technology__logo" src="/assets/images/technologies/graphql.svg" alt="GraphQL logo">
+                    </div>
+                    <div class="card__back">
+                        <span>GraphQL</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="technology card">
+                <div class="card__flip">
+                    <div class="card__front">
+                        <img class="technology__logo" src="/assets/images/technologies/github.svg" alt="Github logo">
+                    </div>
+                    <div class="card__back">
+                        <span>Github</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="technology card">
+                <div class="card__flip">
+                    <div class="card__front">
+                        <img class="technology__logo" src="/assets/images/technologies/json.svg" alt="JSON logo">
+                    </div>
+                    <div class="card__back">
+                        <span>JSON</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="technology card">
+                <div class="card__flip">
+                    <div class="card__front">
+                        <img class="technology__logo" src="/assets/images/technologies/sqlite.svg" alt="SQLite logo">
+                    </div>
+                    <div class="card__back">
+                        <span>SQLite</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="technology card">
+                <div class="card__flip">
+                    <div class="card__front">
+                        <img class="technology__logo" src="/assets/images/technologies/vscode.svg" alt="Visual Studio Code logo">
+                    </div>
+                    <div class="card__back">
+                        <span>Visual Studio Code</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="technology card">
+                <div class="card__flip">
+                    <div class="card__front">
+                        <img class="technology__logo" src="/assets/images/technologies/node.svg" alt="Node logo">
+                    </div>
+                    <div class="card__back">
+                        <span>Node</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="technology card">
+                <div class="card__flip">
+                    <div class="card__front">
+                        <img class="technology__logo" src="/assets/images/technologies/nunjucks.svg" alt="Nunjucks logo">
+                    </div>
+                    <div class="card__back">
+                        <span>Nunjucks</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="technology card">
+                <div class="card__flip">
+                    <div class="card__front">
+                        <img class="technology__logo" src="/assets/images/technologies/adobe_xd.svg" alt="Adobe XD logo">
+                    </div>
+                    <div class="card__back">
+                        <span>Adobe XD</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="technology card">
+                <div class="card__flip">
+                    <div class="card__front">
+                        <img class="technology__logo" src="/assets/images/technologies/eleventy.svg" alt="Eleventy logo">
+                    </div>
+                    <div class="card__back">
+                        <span>Eleventy</span>
+                    </div>
+                </div>
+            </li>
+        
+            <li class="technology card">
+                <div class="card__flip">
+                    <div class="card__front">
+                        <img class="technology__logo" src="/assets/images/technologies/sass.svg" alt="Sass logo">
+                    </div>
+                    <div class="card__back">
+                        <span>Sass</span>
+                    </div>
+                </div>
+            </li>
+        
+        <li class="technology card card--last">
+            <div class="card__flip"> 
+                <div class="card__front">
+                    <a href="./technologies" class="card__link">View all</a>
+                </div>
+                <div class="card__back">
+                    <a href="./technologies" class="card__link">View all</a>
+                </div>
+            </div>
+        </li>
+    </ul>
 </div>
         <div id="Contact" class="content">
-    <h1>Contact</h1>
-</div>   
+    <div class="content__inner content__inner--contact">
+        <div class="contact__description">
+            <p class="text--contact">Want to <span class="color--accent">contact me</span>?<br>
+                Fill out your <span class="color--accent">e-mail</span> &amp; your <span class="color--accent">message</span> below!
+            </p>
+        </div>
+        <form class="contact__form" action="mailto: brent.vansteertegem@student.arteveldehs.be">
+            <label class="contact__label" for="email">E-mail:</label>
+            <input class="contact__input" name="email" type="text" />
+            <label class="contact__label" for="message">Message:</label>
+            <textarea class="contact__input contact__textarea" name="message">This feature is not yet available, you can contact me directly on my email: brent.vansteertegem&#64;student.arteveldehs.be</textarea>
+            <button type="submit" class="button">Submit</button>
+        </form>
+        <section class="contact__links">
+            <div class="socials">
+                <h2 class="text--contact">Socials</h2>
+                <ul class="socials__list">
+                    <li class="socials__item">
+                        <a class="socials__link" target="_blank" href="https://www.linkedin.com/in/brentvansteertegem/">
+                            <img class="logo logo--link" src="/assets/images/linkedin.svg" alt="LinkedIn logo">
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" target="_blank" href="https://github.com/Brent-Van-Steertegem">
+                            <img class="logo logo--link" src="/assets/images/technologies/github.svg" alt="Github logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact__methods">
+                <h2 class="text--contact">Contact</h2>
+                <ul class="contact__list">
+                    <li class="contact__item">
+                        <img class="icon" src="/assets/images/telephone_icon.svg" alt="Telephone icon">
+                        <span class="contact__text">0472 72 39 72</span>
+                    </li>
+                    <li class="contact__item">
+                        <img class="icon" src="/assets/images/email_icon.svg" alt="Email icon">
+                        <span class="contact__text">brent.vansteertegem&#64;<br>student.arteveldehs.be</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </div>
-
+</div>     
     </main>
 
-</body>
+    </body>
+    <script src="/assets/scripts/app.js" type="module"></script>
+
 </html>
