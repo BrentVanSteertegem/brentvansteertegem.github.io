@@ -537,6 +537,10 @@ a {
   text-align: center;
 }
 
+.contact__description {
+  margin-bottom: 1rem;
+}
+
 .contact__form {
   display: flex;
   flex-direction: column;
