@@ -1,6 +1,6 @@
 ---
     name: Sass
     image: technologies/sass.svg
-    type: Stylesheet languages
-    order: 21
+    type: Styling
+    order: 24
 ---

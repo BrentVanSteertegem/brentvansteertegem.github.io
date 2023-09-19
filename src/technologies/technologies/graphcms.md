@@ -2,5 +2,5 @@
     name: GraphCMS
     image: technologies/graphcms.svg
     type: Content management systems (CMS)
-    order: 3
+    order: 5
 ---
