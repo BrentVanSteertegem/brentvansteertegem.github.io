@@ -11,7 +11,10 @@
                             {% if project.data.image %}
                                 <img class="project__image" src="/assets/images/{{project.data.image}}" alt="{{project.data.title}} image">
                             {% endif %}
-                            <p class="project__description">{{project.data.description}}</p>
+                            <p>{{project.data.description}}</p>
+                            <p>Project issuer: {{project.data.type | capitalize}}</p>
+                            <p>Year: {{project.data.year}}</p>
+                            <p>Improved since feedback: {{project.data.improved_since_feedback | capitalize}}</p>
                         </div>
                         <section class="project__links">
                             {% if project.data.demo_url %}
