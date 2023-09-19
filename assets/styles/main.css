@@ -42,7 +42,7 @@ a {
 .logo, .icon {
   height: 2rem;
 }
-.nav__link--logo:hover .logo, .card__link:hover .logo--link, .logo--link:hover {
+.nav__link--logo:hover .logo, .card__link:hover .logo--link, .logo--link:hover, .contact__item:hover {
   transition: 0.4s ease-in-out;
   filter: invert(51%) sepia(83%) saturate(7089%) hue-rotate(81deg) brightness(200%) contrast(100%);
 }
